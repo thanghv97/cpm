@@ -1,0 +1,33 @@
+
+entity Department {
+	id Long
+    name String
+    idParent Long
+}
+
+entity Group {
+	id Long
+    departmentId Long
+    name String
+}
+
+entity User {
+	id Long
+    name String
+}
+
+entity Role {
+	id Long
+    name String
+    system String
+}
+
+entity GroupUser {
+	groupId Long
+    userId Long
+}
+
+entity GroupRole {
+	groupId Long
+    roleId Long
+}
